@@ -24,8 +24,8 @@ h1{
   text-transform: uppercase;
 }
 .btn-primary{
-  background-color: #f05f44;
-  border-color:#f05f44 ;
+  background-color: blue;
+  border-color:blue ;
 }
 .btn-primary:hover{
   background-color:#f05f44 ;
