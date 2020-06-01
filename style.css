@@ -1,37 +1,87 @@
-body,
-html {
-  width: 100%;
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background: url(header.jpg) no-repeat center center fixed; 
-  background-size: cover;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-hr{
-  border-width: 3px;
-  max-width: 65px;
-  background-color:#f05f44 ;
+body{
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#777;
+    padding: 30px;
 }
-h1{
-  color: #e2dbdb;
-  font-size: 3em;
+.header{
+    height: 95vh;
+    background-image:linear-gradient(to right bottom,rgba(126,213,111,0.8),rgba(40,180,111,0.8)), url(./img/hero.jpg);
+    background-size: cover ;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+    position: relative;
 }
-.btn-xl{
-  padding: 1rem 2rem;
+.logo-box{
+    position: absolute;
+    top:40px;
+    left:40px; 
+
 }
-.btn{
-  font-weight: 500;
-  border-radius: 300px;
-  text-transform: uppercase;
+.logo{
+    height:35px;
 }
-.btn-primary{
-  background-color: blue;
-  border-color:blue ;
+.text-box{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
-.btn-primary:hover{
-  background-color:#f05f44 ;
-  border-color: #f05f44;
-  border-width: 4px;
+.heading-primary{
+    color:white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
 }
-.buffer{
-  height: 5rem;
+.heading-primary-main{
+display: block;
+font-size: 80px;
+font-weight: 400;
+letter-spacing: 33px;
+animation-name: Moveinleft;
+animation-duration: 3s;
+animation-timing-function: ease-out;
+
+}
+.heading-primary-sub{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 11.5px;
+    animation-duration: 3s;
+    animation-name: Moveinright;
+    animation-timing-function: ease-out;
+}
+@keyframes Moveinleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        opacity: 0,8;
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes  Moveinright {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        opacity: 0,8;
+        transform: translateX(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
