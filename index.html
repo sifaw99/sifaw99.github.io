@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">  
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>ToDos</title>
 </head>
 <body>
-    <header class="header">
-     <div class="logo-box">
-          <img src="./img/logo-white.png" alt="Logo" class="logo">
-     </div>
-     <div class="text-box">
-          <h1 class="heading-primary">
-           <span class="heading-primary-main"> Outdoors</span>
-           <span class="heading-primary-sub"> is where life happens</span>
-
-          </h1>
-     </div>
-     
-    </header>
+    <div class="container__text">
+        <h1> Bonjour <span id="namedisplay"></span>, Ajouter Votre liste A faire.</h1>
+    </div>
+    <div class="container">
+        <input type="text" placeholder="Enter Votre Nom" id="inputname" class="input">
+        <button id="btnname" class="btn animated">Cliquer Pour Afficher Votre Nom</button>
+        <input type="text" placeholder="Ajouter Votre List a faire" id="input" class="input">
+        <button id="btninput" class="btn animated">Cliquer Pour Ajouter Votre list</button>
+        <ul>
+            <li><span>X</span> A faire Aujourdhui</li>
+        </ul>
+    </div>
+<script type="text/javascript"src="script.js"></script>
 </body>
 </html>
